@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Idea Quality</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="app" class="main">
+        <div>
+            <div class="inpcon">
+                <div>How big is this idea? {{idea.how_big}}</div>
+                <input min="0" max="10" v-model="idea.how_big" type="range">
+            </div>
+
+            <div class="inpcon">
+                <div>Founder fit {{idea.founder_fit}}</div>
+                <input min="0" max="10" v-model="idea.founder_fit" type="range">
+            </div>
+
+            <div class="inpcon">
+                <div>Actually solves a problem {{idea.problem_solving}}</div>
+                <input min="0" max="10" v-model="idea.problem_solving" type="range">
+            </div>
+
+            <div class="inpcon">
+                <div>Have a new insight? {{idea.new_insight}}</div>
+                <input min="0" max="10" v-model="idea.new_insight" type="range">
+            </div>
+        </div>
+        <div>
+            <span>Overall Score: </span>
+            <h1>{{ideaOverallScore}}</h1>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.prod.js"></script>
+    <script src="./assets/main.js"></script>
+
+</body>
+
+</html>

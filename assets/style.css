@@ -1,0 +1,26 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 800px) {
+    .main {
+        margin: 5rem auto;
+    }
+}
+
+.main {
+    max-width: 800px;
+    padding: 2rem;
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.inpcon {
+    margin-bottom: 3rem;
+}
